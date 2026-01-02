@@ -1,0 +1,137 @@
+@import "tailwindcss";
+@layer components{
+
+    .nav-item{
+        font-weight: 500;
+        transition: all 0.23s ease-in-out;
+        display: inline-block;
+    }
+    .sticky-nav{
+        position: sticky;
+        top: 4;
+        z-index: 50;
+    }
+    
+    .list-item{
+        transition: all 0.23s ease-in-out;
+        display: inline-block;
+    }
+    .list-item:hover{
+        transform: scale(1.08);
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0 4px 8px rgba(13, 41, 102, 0.795);
+    }
+    .list-item:focus{
+        transform: scale(1.08);
+        transform: translateY(-5px);
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0 4px 8px rgba(13, 41, 102, 0.795);
+    }
+    .contact-btn{
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .contact-btn:hover{
+        transform: scale(1.08);
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(146, 52, 9, 0.849);
+    }
+    .contact-btn:focus{
+        transform: scale(1.08);
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(146, 52, 9, 0.849);
+    }
+    .Hero{
+        animation: Hero 1s ease-in-out ;
+    }
+    .Project-btn{
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    .Project-btn:hover{
+        transform: scale(1.05);
+        transform: translateY(-7px);
+        box-shadow: 0 4px 8px rgba(98, 39, 138, 0.849);
+    }
+    .Project-btn:focus{
+        transform: scale(1.05);
+        transform: translateY(-7px);
+        box-shadow: 0 4px 8px rgba(98, 39, 138, 0.849);
+    }
+    .fade-in{
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 2s ease-in-out, transform 2s ease-in-out;
+    }
+    .fade-in.show{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .live-demo-btn{
+        transition: all 0.23s ease-in-out;
+        cursor: pointer;
+    }
+    .letter-sp-0 {
+        letter-spacing: 0em;
+      }
+    .letter-sp-1 {
+        letter-spacing: 0.1em;
+      }
+      .letter-sp-2 {
+        letter-spacing: 0.2em;
+      }
+      .letter-sp-3 {
+        letter-spacing: 0.3em;
+      }
+      .letter-sp-4 {
+        letter-spacing: 0.4em;
+      }
+      .letter-sp-5 {
+        letter-spacing: 0.5em;
+      }
+      .font-bbh-bold{
+        font-family: "BBH Hegarty", sans-serif;
+        font-weight: 700;
+        font-style:normal;
+    }
+    .font-cardo-italic {
+        font-family: 'Cardo', serif;
+        font-style: italic;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Playfair Display", serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    p,span{
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+    }
+    .acc-btn{
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+        background-color: #0a0a0a;
+    }
+    .skills-gread{
+      background: -webkit-linear-gradient(#eee, #666);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+  .project-gread{
+    background: -webkit-linear-gradient(#d1d1d1, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes Hero {
+    0% {
+      opacity: 0.1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
